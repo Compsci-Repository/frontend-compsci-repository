@@ -1,0 +1,37 @@
+.c-folder-button {
+  background-color: transparent;
+  border: none;
+  padding: 16px 0 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  aspect-ratio: 203 / 159;
+  color: white;
+  height: 80px;
+  transition-duration: 100ms;
+
+  &--blue {
+    background-image: url("/src/assets/images/folder--blue.png");
+  }
+
+  &--purple {
+    background-image: url("/src/assets/images/folder--purple.png");
+  }
+
+  &--violet {
+    background-image: url("/src/assets/images/folder--violet.png");
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(1.05);
+  }
+
+  div {
+    width: min-content;
+    margin: auto;
+  }
+}
