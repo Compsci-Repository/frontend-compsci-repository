@@ -1,10 +1,10 @@
 {
   /* import { Link } from 'react-router-dom'; */
 }
-import "./homePage.scss";
 import { FolderButton } from "../components";
 import logo_compsci from "../../assets/images/logo-compsci.png";
 import logo_header from "../../assets/images/logo-header.png";
+import ToggleThemeButton from "../components/ToggleThemeButton/ToggleThemeButton";
 function HomePage() {
   return (
     <div className="p-homepage">
@@ -15,6 +15,7 @@ function HomePage() {
             alt="Logo da Compsci-Repository"
             className="p-homepage__header__logo"
           />
+          <ToggleThemeButton />
         </div>
       </header>
       <main className="p-homepage__main">

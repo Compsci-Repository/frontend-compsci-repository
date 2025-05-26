@@ -2,6 +2,9 @@
 @use "./abstracts/variables/breakpoints";
 @use "./abstracts/functions/breakpointsFuncs";
 
+// Theme
+@use "./theme/pages/homePageTheme";
+
 // Base
 @use "./base/reset";
 @use "./base/typography";
@@ -11,3 +14,4 @@
 @use "../view/components/ToggleThemeButton/toggleThemeButton";
 
 // Pages
+@use "../view/pages/homePage";

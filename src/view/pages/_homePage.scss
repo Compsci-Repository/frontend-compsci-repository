@@ -1,13 +1,6 @@
 .p-homepage {
   display: block;
-  background: linear-gradient(
-    45deg,
-    rgba(60, 2, 123, 1),
-    rgba(80, 8, 91, 1),
-    rgba(7, 35, 71, 1),
-    rgba(32, 49, 108, 1),
-    rgba(62, 3, 120, 1)
-  );
+  background: var(--p-home-page-bg-color);
   background-position: center;
   background-size: cover;
   height: 100vh;
