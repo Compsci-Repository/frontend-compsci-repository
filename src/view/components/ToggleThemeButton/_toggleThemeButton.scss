@@ -1,9 +1,11 @@
+@use "../../../styles/abstracts/functions/breakpointsFuncs" as *;
+
 .c-toggle-theme-btn {
   background-color: rgba(19, 19, 19, 0.37);
-  height: 40px;
-  width: 80px;
+  height: 24px;
+  width: 48px;
   border: none;
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 0;
   position: relative;
   display: flex;
@@ -12,7 +14,7 @@
 
   &--light {
     .c-toggle-theme-btn__icon {
-      transform: translateX(32px);
+      transform: translateX(24px);
     }
   }
 
@@ -23,12 +25,36 @@
 
   .c-toggle-theme-btn__icon {
     position: absolute;
-    transition: all 250ms ease-out;
-    left: 4px;
+    transition: 250ms ease-out;
+    left: 3px;
     display: flex;
 
     svg {
-      height: 32px;
+      height: 16px;
+      width: min-content;
+    }
+  }
+}
+
+@media only screen and (min-width: breakpoint(sm)) {
+  .c-toggle-theme-btn {
+    height: 40px;
+    width: 80px;
+    border-radius: 20px;
+
+    &--light {
+      .c-toggle-theme-btn__icon {
+        transform: translateX(36px);
+      }
+    }
+
+    .c-toggle-theme-btn__icon {
+      left: 4px;
+
+      svg {
+        height: 32px;
+        width: min-content;
+      }
     }
   }
 }
