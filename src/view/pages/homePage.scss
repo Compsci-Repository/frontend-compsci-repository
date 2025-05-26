@@ -1,0 +1,61 @@
+.p-homepage {
+  display: block;
+  background: linear-gradient(
+    45deg,
+    rgba(60, 2, 123, 1),
+    rgba(80, 8, 91, 1),
+    rgba(7, 35, 71, 1),
+    rgba(32, 49, 108, 1),
+    rgba(62, 3, 120, 1)
+  );
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+
+  &__header {
+    display: block;
+    background: linear-gradient(
+      90deg,
+      rgba(82, 13, 142, 1),
+      rgba(80, 10, 110, 1),
+      rgba(80, 8, 91, 1),
+      rgba(147, 15, 167, 1),
+      rgba(169, 18, 193, 1)
+    );
+    background-size: cover;
+  }
+
+  &__header2 {
+    height: 100%;
+    padding-bottom: 0.05px;
+    text-align: center;
+    width: auto;
+  }
+
+  &__header__logo {
+    height: 100%;
+    object-fit: contain;
+    /*background-color: rgba(170, 18, 193, 0.281);*/
+    box-shadow: 1px 0px 7px 2px rgba(80, 8, 91, 0.656);
+  }
+
+  &__main__logo {
+    margin-top: 15px;
+  }
+
+  &__main__search {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  &__folders {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15%;
+    justify-content: center;
+    align-items: center;
+  }
+}
