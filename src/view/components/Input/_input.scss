@@ -1,0 +1,29 @@
+.c-input {
+  background-color: var(--c-input-bg-color);
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+
+    svg * {
+      fill: var(--c-input-txt-color);
+    }
+  }
+
+  &__input {
+    border: none;
+    background-color: transparent;
+    color: var(--c-input-txt-color);
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
