@@ -107,6 +107,12 @@ input {
   border-radius: 0;
 }
 
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 html {
   background-color: var(--color-background);
 }
