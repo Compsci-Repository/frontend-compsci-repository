@@ -1,12 +1,21 @@
 import { useTheme } from "../../../context";
 import { Moon, Sun } from "../../../assets/icons";
+import classNames from "classnames";
 
-function ToggleThemeButton() {
+type Props = {
+  className?: string;
+};
+
+function ToggleThemeButton({ className }: Props) {
   const { toggleTheme, theme } = useTheme();
 
   return (
     <button
-      className={`c-toggle-theme-btn c-toggle-theme-btn--${theme}`}
+      className={classNames(
+        "c-toggle-theme-btn",
+        `c-toggle-theme-btn--${theme}`,
+        className
+      )}
       onClick={() => toggleTheme()}
     >
       <div className="c-toggle-theme-btn__icon">

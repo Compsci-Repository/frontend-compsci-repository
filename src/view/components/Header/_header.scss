@@ -1,0 +1,26 @@
+.c-header {
+  background: linear-gradient(
+    90deg,
+    rgba(82, 13, 142, 1),
+    rgba(80, 10, 110, 1),
+    rgba(80, 8, 91, 1),
+    rgba(147, 15, 167, 1),
+    rgba(169, 18, 193, 1)
+  );
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "empty logo button";
+  padding: 0 16px;
+
+  &__logo {
+    align-self: center;
+    grid-area: logo;
+    justify-self: center;
+  }
+
+  &__theme-switch {
+    grid-area: button;
+    justify-self: end;
+    align-self: center;
+  }
+}
