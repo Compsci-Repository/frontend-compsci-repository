@@ -1,0 +1,9 @@
+:root {
+  --c-input-bg-color: #4f0069;
+  --c-input-txt-color: #ffffff;
+}
+
+[data-theme="dark"] {
+  --c-input-bg-color: #f6bcff;
+  --c-input-txt-color: #000000;
+}
