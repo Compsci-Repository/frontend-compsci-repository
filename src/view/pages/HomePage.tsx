@@ -1,7 +1,10 @@
 import { FolderButton, Input } from "../components";
 import logo_compsci from "../../assets/images/logo-compsci.png";
 import { Header } from "../components/Header";
+import { useNavigate } from "react-router-dom";
+
 function HomePage() {
+  const navigate = useNavigate();
   return (
     <div className="p-homepage">
       <Header />
@@ -11,7 +14,14 @@ function HomePage() {
         </div>
         <Input placeholder="Procurar material" />
         <div className="p-homepage__folders">
-          <FolderButton color="violet">1º PERÍODO</FolderButton>
+          <FolderButton
+            onClick={() => {
+              navigate("/periodo");
+            }}
+            color="violet"
+          >
+            1º PERÍODO
+          </FolderButton>
           <FolderButton color="purple">2º PERÍODO</FolderButton>
           <FolderButton color="purple">3º PERÍODO</FolderButton>
           <FolderButton color="violet">4º PERÍODO</FolderButton>
