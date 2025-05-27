@@ -16,7 +16,7 @@ function HomePage() {
         <div className="p-homepage__folders">
           <FolderButton
             onClick={() => {
-              navigate("/periodo");
+              navigate("/disciplinas");
             }}
             color="violet"
           >

@@ -5,6 +5,7 @@
 // Theme
 @use "./theme/components/inputTheme";
 @use "./theme/pages/homePageTheme";
+@use "./theme/pages/classesTheme";
 
 // Base
 @use "./base/reset";
@@ -18,3 +19,4 @@
 
 // Pages
 @use "../view/pages/homePage";
+@use "../view/pages/classes";

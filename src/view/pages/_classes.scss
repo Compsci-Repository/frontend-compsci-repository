@@ -1,0 +1,24 @@
+.p-classes {
+  background: var(--p-home-page-bg-color);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 32px;
+    gap: 32px;
+
+    &__folders {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 32px 15%;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}
