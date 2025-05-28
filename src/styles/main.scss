@@ -6,7 +6,9 @@
 @use "./theme/general";
 @use "./theme/components/inputTheme";
 @use "./theme/components/fileListItemTheme";
+@use "./theme/components/backButtonTheme";
 @use "./theme/pages/homePageTheme";
+@use "./theme/pages/classesTheme";
 
 // Base
 @use "./base/reset";
@@ -20,5 +22,7 @@
 @use "../view/components/FileListItem/fileListItem";
 
 // Pages
-@use "../view/pages/homePage";
+@use "../view/pages/HomePage/homePage";
+@use "../view/pages/ClassesPage/classesPage";
 @use "../view/pages/ContentListPage/contentListPage";
+@use "../view/components/BackButton/backButton";
