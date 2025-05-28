@@ -7,7 +7,6 @@
 @use "./theme/components/inputTheme";
 @use "./theme/components/fileListItemTheme";
 @use "./theme/components/backButtonTheme";
-@use "./theme/pages/homePageTheme";
 @use "./theme/pages/classesTheme";
 
 // Base
@@ -20,6 +19,7 @@
 @use "../view/components/Input/input";
 @use "../view/components/Header/header";
 @use "../view/components/FileListItem/fileListItem";
+@use "../view/components/Layout/layout";
 
 // Pages
 @use "../view/pages/HomePage/homePage";

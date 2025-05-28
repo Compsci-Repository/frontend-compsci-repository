@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BackButton, FolderButton, Header, Input } from "../../components";
+import { BackButton, FolderButton, Input } from "../../components";
 import { useNavigate, useParams } from "react-router-dom";
 import { getSemesterSubjects } from "../../../controller/utils/subjectUtils";
 import folder from "../../../assets/images/folder--purple.png";
@@ -19,31 +19,28 @@ function ClassesPage() {
 
   return (
     <div className="p-classes">
-      <Header />
-      <main className="p-classes__main">
-        <div className="p-classes__main__nav-search">
-          <div className="p-classes__main__nav-indicator">
-            <img src={folder} />
-            <div className="p-classes__main__nav-indicator__description">
-              <h2>DISCIPLINAS</h2>
-              <h1>{`${semester}º PERÍODO`}</h1>
-            </div>
+      <div className="p-classes__nav-search">
+        <div className="p-classes__nav-indicator">
+          <img src={folder} />
+          <div className="p-classes__nav-indicator__description">
+            <h2>DISCIPLINAS</h2>
+            <h1>{`${semester}º PERÍODO`}</h1>
           </div>
-          <Input placeholder="Procurar material" />
         </div>
-        <div className="p-classes__main__folders">
-          {getSemesterSubjects(semester ?? 0).map((subject, i) => (
-            <FolderButton
-              color="blue"
-              key={`p-classes__main__folder${i}`}
-              onClick={() => navigate(subject)}
-            >
-              {subject.toUpperCase()}
-            </FolderButton>
-          ))}
-        </div>
-        <BackButton />
-      </main>
+        <Input placeholder="Procurar material" />
+      </div>
+      <div className="p-classes__folders">
+        {getSemesterSubjects(semester ?? 0).map((subject, i) => (
+          <FolderButton
+            color="blue"
+            key={`p-classes__main__folder${i}`}
+            onClick={() => navigate(subject)}
+          >
+            {subject.toUpperCase()}
+          </FolderButton>
+        ))}
+      </div>
+      <BackButton />
     </div>
   );
 }

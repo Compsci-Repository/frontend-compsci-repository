@@ -1,97 +1,84 @@
 @use "../../../styles/abstracts/functions/breakpointsFuncs" as *;
 
 .p-classes {
-  background: var(--p-home-page-bg-color);
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 32px 80px 32px;
+  gap: 32px;
 
-  &__main {
+  &__nav-search {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    padding: 32px;
     gap: 32px;
+  }
 
-    &__nav-search {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 32px;
+  &__nav-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    h2 {
+      display: none;
     }
 
-    &__nav-indicator {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
-
-      h2 {
-        display: none;
-      }
-
-      img {
-        height: 100px;
-      }
+    img {
+      height: 100px;
     }
+  }
 
-    &__folders {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 32px 15%;
-      justify-content: center;
-      align-items: center;
-    }
+  &__folders {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 15%;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 @media only screen and (min-width: breakpoint(sm)) {
   .p-classes {
-    &__main {
-      &__folders {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 32px 48px;
-        width: initial;
-        max-width: 800px;
-      }
+    &__folders {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 32px 48px;
+      width: initial;
+      max-width: 800px;
     }
   }
 }
 
 @media only screen and (min-width: breakpoint(md)) {
   .p-classes {
-    &__main {
-      margin: 0 auto;
-      padding: 64px 32px;
-      max-width: 800px;
+    margin: 0 auto;
+    padding: 64px 32px;
+    max-width: 800px;
 
-      &__nav-search {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-between;
+    &__nav-search {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+    }
+
+    &__nav-indicator {
+      flex-direction: row;
+
+      h2 {
+        display: initial;
       }
 
-      &__nav-indicator {
-        flex-direction: row;
-
-        h2 {
-          display: initial;
-        }
-
-        &__description {
-          display: flex;
-          flex-direction: column;
-          gap: 8px;
-        }
+      &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
       }
+    }
 
-      &__folders {
-        gap: 32px 64px;
-      }
+    &__folders {
+      gap: 32px 64px;
     }
   }
 }

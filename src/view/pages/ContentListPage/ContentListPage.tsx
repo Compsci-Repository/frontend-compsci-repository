@@ -1,4 +1,4 @@
-import { FileListItem, Header, Input } from "../../components";
+import { FileListItem, Input } from "../../components";
 import type { FileCategory } from "../../../model/types";
 import ActivityIcon from "../../../assets/icons/ActivityIcon";
 import BookIcon from "../../../assets/icons/BookIcon";
@@ -74,40 +74,37 @@ function ContentListPage() {
 
   return (
     <div className="p-content-list">
-      <Header />
-      <main className="p-content-list__main">
-        <div className="p-content-list__nav-search">
-          <div className="p-content-list__nav-indicator--mobile">
-            <div className="p-content-list__nav-indicator__icon">
-              {getCategoryIcon(props?.category ?? "activity")}
-            </div>
-            <div className="p-content-list__nav-indicator__description">
-              <h2>
-                {parseCategory(props?.category ?? "activity").toUpperCase()}
-              </h2>
-            </div>
+      <div className="p-content-list__nav-search">
+        <div className="p-content-list__nav-indicator--mobile">
+          <div className="p-content-list__nav-indicator__icon">
+            {getCategoryIcon(props?.category ?? "activity")}
           </div>
-          <div className="p-content-list__nav-indicator--desktop">
-            <div className="p-content-list__nav-indicator__icon">
-              <img src={folder} />
-            </div>
-            <div className="p-content-list__nav-indicator__description">
-              <h3>{`${props?.semester}º PERÍODO > ${parseSubject(
-                props?.subject ?? ""
-              ).toUpperCase()}`}</h3>
-              <h2>
-                {parseCategory(props?.category ?? "activity").toUpperCase()}
-              </h2>
-            </div>
+          <div className="p-content-list__nav-indicator__description">
+            <h2>
+              {parseCategory(props?.category ?? "activity").toUpperCase()}
+            </h2>
           </div>
-          <Input placeholder="Procurar material" />
         </div>
-        <ol className="p-content-list__list">
-          {files?.map((f, i) => (
-            <FileListItem file={f} key={`p-content-list__item${i}`} />
-          ))}
-        </ol>
-      </main>
+        <div className="p-content-list__nav-indicator--desktop">
+          <div className="p-content-list__nav-indicator__icon">
+            <img src={folder} />
+          </div>
+          <div className="p-content-list__nav-indicator__description">
+            <h3>{`${props?.semester}º PERÍODO > ${parseSubject(
+              props?.subject ?? ""
+            ).toUpperCase()}`}</h3>
+            <h2>
+              {parseCategory(props?.category ?? "activity").toUpperCase()}
+            </h2>
+          </div>
+        </div>
+        <Input placeholder="Procurar material" />
+      </div>
+      <ol className="p-content-list__list">
+        {files?.map((f, i) => (
+          <FileListItem file={f} key={`p-content-list__item${i}`} />
+        ))}
+      </ol>
     </div>
   );
 }

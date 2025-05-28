@@ -114,5 +114,8 @@ button {
 }
 
 html {
-  background-color: var(--color-background);
+  background: var(--bg-color);
+  background-position: center;
+  background-size: cover;
+  color: var(--text-primary);
 }
