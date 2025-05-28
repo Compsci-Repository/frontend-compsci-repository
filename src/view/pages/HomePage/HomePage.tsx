@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 function HomePage() {
   const navigate = useNavigate();
+
   return (
     <div className="p-homepage">
       <Header />
@@ -14,21 +15,30 @@ function HomePage() {
         </div>
         <Input placeholder="Procurar material" />
         <div className="p-homepage__folders">
-          <FolderButton
-            onClick={() => {
-              navigate("/disciplinas");
-            }}
-            color="violet"
-          >
+          <FolderButton onClick={() => navigate("/1")} color="violet">
             1º PERÍODO
           </FolderButton>
-          <FolderButton color="purple">2º PERÍODO</FolderButton>
-          <FolderButton color="purple">3º PERÍODO</FolderButton>
-          <FolderButton color="violet">4º PERÍODO</FolderButton>
-          <FolderButton color="violet">5º PERÍODO</FolderButton>
-          <FolderButton color="purple">6º PERÍODO</FolderButton>
-          <FolderButton color="purple">7º PERÍODO</FolderButton>
-          <FolderButton color="violet">8º PERÍODO</FolderButton>
+          <FolderButton onClick={() => navigate("/2")} color="purple">
+            2º PERÍODO
+          </FolderButton>
+          <FolderButton onClick={() => navigate("/3")} color="purple">
+            3º PERÍODO
+          </FolderButton>
+          <FolderButton onClick={() => navigate("/4")} color="violet">
+            4º PERÍODO
+          </FolderButton>
+          <FolderButton onClick={() => navigate("/5")} color="violet">
+            5º PERÍODO
+          </FolderButton>
+          <FolderButton onClick={() => navigate("/6")} color="purple">
+            6º PERÍODO
+          </FolderButton>
+          <FolderButton onClick={() => navigate("/7")} color="purple">
+            7º PERÍODO
+          </FolderButton>
+          <FolderButton onClick={() => navigate("/8")} color="violet">
+            8º PERÍODO
+          </FolderButton>
         </div>
       </main>
     </div>

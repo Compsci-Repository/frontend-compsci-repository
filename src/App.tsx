@@ -6,7 +6,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/disciplinas" element={<ClassesPage />} />
+        <Route path="/:semester" element={<ClassesPage />} />
         <Route
           path="/:semester/:subject/:category"
           element={<ContentListPage />}

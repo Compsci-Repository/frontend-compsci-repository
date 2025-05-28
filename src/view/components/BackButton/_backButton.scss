@@ -1,0 +1,26 @@
+@use "../../../styles/abstracts/functions/breakpointsFuncs" as *;
+
+.c-back-btn {
+  position: fixed;
+  bottom: 32px;
+  left: 32px;
+  background-color: var(--c-back-btn-bg-color);
+  border: none;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 8px;
+  border-radius: 100vmax;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.534);
+
+  svg * {
+    fill: var(--text-secondary);
+  }
+}
+
+@media only screen and (min-width: breakpoint(sm)) {
+  .c-back-btn {
+    left: 25%;
+  }
+}
