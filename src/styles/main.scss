@@ -3,7 +3,9 @@
 @use "./abstracts/functions/breakpointsFuncs";
 
 // Theme
+@use "./theme/general";
 @use "./theme/components/inputTheme";
+@use "./theme/components/fileListItemTheme";
 @use "./theme/pages/homePageTheme";
 
 // Base
@@ -15,6 +17,8 @@
 @use "../view/components/ToggleThemeButton/toggleThemeButton";
 @use "../view/components/Input/input";
 @use "../view/components/Header/header";
+@use "../view/components/FileListItem/fileListItem";
 
 // Pages
 @use "../view/pages/homePage";
+@use "../view/pages/ContentListPage/contentListPage";

@@ -1,0 +1,21 @@
+.c-file-li {
+  background-color: var(--c-file-li-bg-color);
+  color: var(--text-primary);
+  list-style-type: none;
+  display: inline-flex;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 50px;
+  width: 100%;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__icon {
+    height: 16px;
+    width: 16px;
+    aspect-ratio: 1/1;
+  }
+}
