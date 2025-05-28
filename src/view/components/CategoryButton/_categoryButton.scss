@@ -1,0 +1,24 @@
+.c-category-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 16px;
+  border-radius: 16px;
+
+  svg {
+    height: 60px;
+    width: fit-content;
+    justify-content: center;
+  }
+
+  span {
+    font-size: 20px;
+  }
+
+  &:hover {
+    background-color: #ffffff5d;
+  }
+}

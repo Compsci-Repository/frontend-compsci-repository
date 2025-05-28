@@ -1,10 +1,10 @@
 import type { FileCategory } from "../../model/types";
 
 const CATEGORIES: Record<FileCategory, string> = {
-  activity: "Atividade",
-  book: "Livro",
-  exam: "Prova",
-  video: "Vídeo",
+  activity: "Atividades",
+  book: "Livros",
+  exam: "Provas",
+  video: "Vídeos",
 };
 
 function parseCategory(category: FileCategory) {

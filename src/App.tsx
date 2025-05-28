@@ -1,5 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { ClassesPage, ContentListPage, HomePage } from "./view/pages";
+import {
+  CategoriesPage,
+  ClassesPage,
+  ContentListPage,
+  HomePage,
+} from "./view/pages";
 import { Layout } from "./view/components/Layout";
 
 function App() {
@@ -7,12 +12,19 @@ function App() {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/:semester" element={<ClassesPage />} />
-          <Route
-            path="/:semester/:subject/:category"
-            element={<ContentListPage />}
-          />
+          <Route path="/">
+            <Route index element={<HomePage />} />
+            <Route path="/:semester">
+              <Route index element={<ClassesPage />} />
+              <Route path="/:semester/:subject">
+                <Route index element={<CategoriesPage />} />
+                <Route
+                  path="/:semester/:subject/:category"
+                  element={<ContentListPage />}
+                />
+              </Route>
+            </Route>
+          </Route>
         </Routes>
       </Layout>
     </Router>

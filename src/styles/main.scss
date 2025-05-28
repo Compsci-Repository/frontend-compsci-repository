@@ -20,9 +20,11 @@
 @use "../view/components/Header/header";
 @use "../view/components/FileListItem/fileListItem";
 @use "../view/components/Layout/layout";
+@use "../view/components/CategoryButton/categoryButton";
 
 // Pages
 @use "../view/pages/HomePage/homePage";
 @use "../view/pages/ClassesPage/classesPage";
 @use "../view/pages/ContentListPage/contentListPage";
 @use "../view/components/BackButton/backButton";
+@use "../view/pages/CategoriesPage/categoriesPage";
