@@ -1,0 +1,21 @@
+@use "../../../styles/abstracts/functions/breakpointsFuncs" as *;
+
+.c-layout {
+  height: 100vh;
+  height: 100dvh;
+
+  &__main {
+    height: calc(100vh - 48px);
+    height: calc(100dvh - 48px);
+    overflow-y: auto;
+  }
+}
+
+@media only screen and (min-width: breakpoint(sm)) {
+  .c-layout {
+    &__main {
+      height: calc(100vh - 70px);
+      height: calc(100dvh - 70px);
+    }
+  }
+}
