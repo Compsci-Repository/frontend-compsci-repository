@@ -1,4 +1,4 @@
-import { FileListItem, Input } from "../../components";
+import { BackButton, FileListItem, Input } from "../../components";
 import type { FileCategory } from "../../../model/types";
 import ActivityIcon from "../../../assets/icons/ActivityIcon";
 import BookIcon from "../../../assets/icons/BookIcon";
@@ -105,6 +105,7 @@ function ContentListPage() {
           <FileListItem file={f} key={`p-content-list__item${i}`} />
         ))}
       </ol>
+      <BackButton />
     </div>
   );
 }

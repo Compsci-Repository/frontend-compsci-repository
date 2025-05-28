@@ -1,6 +1,6 @@
 @use "../../../styles/abstracts/functions/breakpointsFuncs" as *;
 
-.p-classes {
+.p-categories {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,42 +16,45 @@
   }
 
   &__nav-indicator {
+    &--mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+
+      img {
+        height: 100px;
+      }
+    }
+
+    &--desktop {
+      display: none;
+      img {
+        height: 100px;
+      }
+    }
+  }
+
+  &__categories {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
-
-    h2 {
-      display: none;
-    }
-
-    img {
-      height: 100px;
-    }
-  }
-
-  &__folders {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px 15%;
-    justify-content: center;
-    align-items: center;
   }
 }
 
 @media only screen and (min-width: breakpoint(sm)) {
-  .p-classes {
-    &__folders {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 32px 48px;
-      width: initial;
-      max-width: 800px;
+  .p-categories {
+    &__categories {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px 32px;
     }
   }
 }
 
 @media only screen and (min-width: breakpoint(md)) {
-  .p-classes {
+  .p-categories {
     margin: 0 auto;
     padding: 64px 32px;
     max-width: 1000px;
@@ -64,15 +67,28 @@
     }
 
     &__nav-indicator {
-      flex-direction: row;
-
-      h2 {
-        display: initial;
-        font-size: 16px;
+      &--mobile {
+        display: none;
       }
 
-      h1 {
-        font-size: 24px;
+      &--desktop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+
+        h2 {
+          font-size: 24px;
+        }
+
+        h3 {
+          font-size: 16px;
+        }
+      }
+
+      &__icon > * {
+        height: 100px;
+        width: initial;
       }
 
       &__description {
@@ -82,8 +98,8 @@
       }
     }
 
-    &__folders {
-      gap: 32px 64px;
+    &__categories {
+      gap: 64px 128px;
     }
   }
 }
