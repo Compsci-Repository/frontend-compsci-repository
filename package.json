@@ -10,10 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.9.0",
     "classnames": "^2.5.1",
     "js-cookie": "^3.0.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-file-icon": "^1.6.0",
     "react-router-dom": "^7.6.0"
   },
   "devDependencies": {
@@ -21,6 +23,7 @@
     "@types/js-cookie": "^3.0.6",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
+    "@types/react-file-icon": "^1.0.4",
     "@vitejs/plugin-react": "^4.4.1",
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
