@@ -1,6 +1,6 @@
-import { FolderButton, Input } from "../components";
-import logo_compsci from "../../assets/images/logo-compsci.png";
-import { Header } from "../components/Header";
+import { FolderButton, Input } from "../../components";
+import logo_compsci from "../../../assets/images/logo-compsci.png";
+import { Header } from "../../components/Header";
 import { useNavigate } from "react-router-dom";
 
 function HomePage() {

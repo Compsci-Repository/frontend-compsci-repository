@@ -21,6 +21,6 @@
 @use "../view/components/FileListItem/fileListItem";
 
 // Pages
-@use "../view/pages/homePage";
-@use "../view/pages/classes";
+@use "../view/pages/HomePage/homePage";
+@use "../view/pages/ClassesPage/classesPage";
 @use "../view/pages/ContentListPage/contentListPage";

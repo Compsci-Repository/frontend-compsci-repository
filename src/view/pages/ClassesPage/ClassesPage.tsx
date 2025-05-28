@@ -1,8 +1,6 @@
-import { Header } from "../components/Header";
-import { FolderButton, Input } from "../components";
-import { BackButton } from "../components/BackButton";
+import { BackButton, FolderButton, Header, Input } from "../../components";
 
-function Classes() {
+function ClassesPage() {
   return (
     <div className="p-classes">
       <Header />
@@ -26,4 +24,4 @@ function Classes() {
     </div>
   );
 }
-export default Classes;
+export default ClassesPage;
