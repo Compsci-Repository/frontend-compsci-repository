@@ -28,8 +28,8 @@ function FileListItem({
           {...defaultStyles[file.fileType as DefaultExtensionType]}
         />
       </div>
-      <span>{file.title}</span>
-      <span>{file.author}</span>
+      <span>{file.title.toUpperCase()}</span>
+      <span>{file.author.toUpperCase()}</span>
     </li>
   );
 }

@@ -10,7 +10,7 @@ function App() {
         <Route path="/" element={<Home_Page />} />
         <Route path="/periodo" element={<Periodo />} />
         <Route
-          path="/:semestr/:subject/:category"
+          path="/:semester/:subject/:category"
           element={<ContentListPage />}
         />
       </Routes>

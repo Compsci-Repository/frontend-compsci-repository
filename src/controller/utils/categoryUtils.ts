@@ -11,4 +11,10 @@ function parseCategory(category: FileCategory) {
   return CATEGORIES[category];
 }
 
-export { parseCategory };
+function isCategory(text: string) {
+  if (CATEGORIES[text as FileCategory]) return true;
+
+  return false;
+}
+
+export { parseCategory, isCategory };
