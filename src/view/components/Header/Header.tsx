@@ -1,5 +1,5 @@
 import ToggleThemeButton from "../ToggleThemeButton/ToggleThemeButton";
-import logo from "../../../assets/images/logo-header.png";
+import logo from "../../assets/images/logo-header.png";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
 

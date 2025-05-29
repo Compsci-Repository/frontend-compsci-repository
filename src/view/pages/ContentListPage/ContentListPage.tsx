@@ -1,19 +1,21 @@
 import { BackButton, FileListItem, Input } from "../../components";
 import type { FileCategory } from "../../../model/types";
-import ActivityIcon from "../../../assets/icons/ActivityIcon";
-import BookIcon from "../../../assets/icons/BookIcon";
-import ExamIcon from "../../../assets/icons/ExamIcon";
-import VideoIcon from "../../../assets/icons/VideoIcon";
 import { useEffect, useState } from "react";
 import { File } from "../../../model/classes";
-import { useFile } from "../../../context/FileContext";
+import { useFile } from "../../../controller/context/FileContext";
 import {
   isCategory,
   parseCategory,
 } from "../../../controller/utils/categoryUtils";
 import { useParams } from "react-router-dom";
-import folder from "../../../assets/images/folder--blue.png";
+import folder from "../../assets/images/folder--blue.png";
 import { parseSubject } from "../../../controller/utils/subjectUtils";
+import {
+  ActivityIcon,
+  BookIcon,
+  ExamIcon,
+  VideoIcon,
+} from "../../assets/icons";
 
 type PageProps = {
   semester: number;

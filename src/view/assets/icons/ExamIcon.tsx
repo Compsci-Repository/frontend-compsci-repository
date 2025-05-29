@@ -151,8 +151,8 @@ function ExamIcon(props: SVGProps<SVGSVGElement>) {
           y2="86.4999"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9B4B9A" />
-          <stop offset="1" stop-color="#B5DBFF" />
+          <stop stopColor="#9B4B9A" />
+          <stop offset="1" stopColor="#B5DBFF" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_2775_2227"
@@ -162,8 +162,8 @@ function ExamIcon(props: SVGProps<SVGSVGElement>) {
           y2="81.7223"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9B4B9A" />
-          <stop offset="1" stop-color="#B5DBFF" />
+          <stop stopColor="#9B4B9A" />
+          <stop offset="1" stopColor="#B5DBFF" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_2775_2227"
@@ -173,8 +173,8 @@ function ExamIcon(props: SVGProps<SVGSVGElement>) {
           y2="81.7223"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9B4B9A" />
-          <stop offset="1" stop-color="#B5DBFF" />
+          <stop stopColor="#9B4B9A" />
+          <stop offset="1" stopColor="#B5DBFF" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_2775_2227"
@@ -184,8 +184,8 @@ function ExamIcon(props: SVGProps<SVGSVGElement>) {
           y2="5.27778"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9B4B9A" />
-          <stop offset="1" stop-color="#B5DBFF" />
+          <stop stopColor="#9B4B9A" />
+          <stop offset="1" stopColor="#B5DBFF" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_2775_2227"
@@ -195,8 +195,8 @@ function ExamIcon(props: SVGProps<SVGSVGElement>) {
           y2="24.3889"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9B4B9A" />
-          <stop offset="1" stop-color="#B5DBFF" />
+          <stop stopColor="#9B4B9A" />
+          <stop offset="1" stopColor="#B5DBFF" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_2775_2227"
@@ -206,8 +206,8 @@ function ExamIcon(props: SVGProps<SVGSVGElement>) {
           y2="19.6112"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9B4B9A" />
-          <stop offset="1" stop-color="#B5DBFF" />
+          <stop stopColor="#9B4B9A" />
+          <stop offset="1" stopColor="#B5DBFF" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_2775_2227"
@@ -217,8 +217,8 @@ function ExamIcon(props: SVGProps<SVGSVGElement>) {
           y2="24.3888"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9B4B9A" />
-          <stop offset="1" stop-color="#B5DBFF" />
+          <stop stopColor="#9B4B9A" />
+          <stop offset="1" stopColor="#B5DBFF" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_2775_2227"
@@ -228,8 +228,8 @@ function ExamIcon(props: SVGProps<SVGSVGElement>) {
           y2="14.8334"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9B4B9A" />
-          <stop offset="1" stop-color="#B5DBFF" />
+          <stop stopColor="#9B4B9A" />
+          <stop offset="1" stopColor="#B5DBFF" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_2775_2227"
@@ -239,8 +239,8 @@ function ExamIcon(props: SVGProps<SVGSVGElement>) {
           y2="10.0556"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9B4B9A" />
-          <stop offset="1" stop-color="#B5DBFF" />
+          <stop stopColor="#9B4B9A" />
+          <stop offset="1" stopColor="#B5DBFF" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_2775_2227"
@@ -250,8 +250,8 @@ function ExamIcon(props: SVGProps<SVGSVGElement>) {
           y2="5.27778"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9B4B9A" />
-          <stop offset="1" stop-color="#B5DBFF" />
+          <stop stopColor="#9B4B9A" />
+          <stop offset="1" stopColor="#B5DBFF" />
         </linearGradient>
       </defs>
     </svg>

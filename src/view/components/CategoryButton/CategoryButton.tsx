@@ -4,7 +4,7 @@ import {
   BookIcon,
   ExamIcon,
   VideoIcon,
-} from "../../../assets/icons";
+} from "../../assets/icons";
 import { parseCategory } from "../../../controller/utils/categoryUtils";
 import type { FileCategory } from "../../../model/types";
 import type { ButtonHTMLAttributes } from "react";

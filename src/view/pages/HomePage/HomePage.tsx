@@ -1,5 +1,5 @@
 import { FolderButton, Input } from "../../components";
-import logo_compsci from "../../../assets/images/logo-compsci.png";
+import logo_compsci from "../../assets/images/logo-compsci.png";
 import { useNavigate } from "react-router-dom";
 
 function HomePage() {

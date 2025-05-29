@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { BackButton, CategoryButton, Input } from "../../components";
 import { useParams } from "react-router-dom";
-import folder from "../../../assets/images/folder--purple.png";
+import folder from "../../assets/images/folder--purple.png";
 import { parseSubject } from "../../../controller/utils/subjectUtils";
 
 type PageProps = {

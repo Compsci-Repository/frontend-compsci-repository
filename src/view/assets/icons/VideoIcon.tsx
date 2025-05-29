@@ -13,23 +13,23 @@ function VideoIcon(props: SVGProps<SVGSVGElement>) {
       <path
         d="M48.5998 5H5.39978V45H48.5998V5Z"
         fill="#CDCDCD"
-        fill-opacity="0.69"
+        fillOpacity="0.69"
       />
       <path
         d="M5.39989 10H2.69989V40H5.39989V10Z"
         fill="#CDCDCD"
-        fill-opacity="0.43"
+        fillOpacity="0.43"
       />
       <path
         d="M43.1998 45H10.7998V47.5H43.1998V45Z"
         fill="#CDCDCD"
-        fill-opacity="0.43"
+        fillOpacity="0.43"
       />
-      <path d="M51.3 10H48.6V40H51.3V10Z" fill="#CDCDCD" fill-opacity="0.43" />
+      <path d="M51.3 10H48.6V40H51.3V10Z" fill="#CDCDCD" fillOpacity="0.43" />
       <path
         d="M43.1998 2.5H10.7998V5H43.1998V2.5Z"
         fill="#CDCDCD"
-        fill-opacity="0.43"
+        fillOpacity="0.43"
       />
       <path d="M43.2001 0H10.8001V2.5H43.2001V0Z" fill="#8B8B8B" />
       <path d="M10.8 2.5H5.40002V5H10.8V2.5Z" fill="#8B8B8B" />
