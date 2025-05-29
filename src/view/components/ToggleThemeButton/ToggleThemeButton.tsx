@@ -1,5 +1,5 @@
-import { useTheme } from "../../../context";
-import { Moon, Sun } from "../../../assets/icons";
+import { useTheme } from "../../../controller/context";
+import { Moon, Sun } from "../../assets/icons";
 import classNames from "classnames";
 
 type Props = {

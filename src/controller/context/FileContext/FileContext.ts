@@ -1,6 +1,6 @@
 import { createContext, useContext } from "react";
-import type { FileCategory } from "../../model/types";
-import type { File } from "../../model/classes";
+import type { FileCategory } from "../../../model/types";
+import type { File } from "../../../model/classes";
 
 type Props = {
   getFiles(

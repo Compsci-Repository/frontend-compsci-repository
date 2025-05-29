@@ -4,8 +4,8 @@ import {
   ClassesPage,
   ContentListPage,
   HomePage,
-} from "./view/pages";
-import { Layout } from "./view/components/Layout";
+} from "./pages";
+import { Layout } from "./components/Layout";
 
 function App() {
   return (

@@ -75,8 +75,8 @@ function BookIcon(props: SVGProps<SVGSVGElement>) {
           y2="8.53883"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#50085B" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="#50085B" />
+          <stop offset="1" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_2775_2306"
@@ -86,8 +86,8 @@ function BookIcon(props: SVGProps<SVGSVGElement>) {
           y2="111.135"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#50085B" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="#50085B" />
+          <stop offset="1" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_2775_2306"
@@ -97,8 +97,8 @@ function BookIcon(props: SVGProps<SVGSVGElement>) {
           y2="56.0903"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#50085B" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="#50085B" />
+          <stop offset="1" stopColor="white" />
         </linearGradient>
       </defs>
     </svg>

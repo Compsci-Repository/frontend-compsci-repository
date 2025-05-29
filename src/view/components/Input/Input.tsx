@@ -1,5 +1,5 @@
 import type { InputHTMLAttributes } from "react";
-import Magnifier from "../../../assets/icons/Magnifier";
+import { Magnifier } from "../../assets/icons";
 
 function Input({ className, ...props }: InputHTMLAttributes<HTMLInputElement>) {
   return (

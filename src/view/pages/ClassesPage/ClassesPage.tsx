@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { BackButton, FolderButton, Input } from "../../components";
 import { useNavigate, useParams } from "react-router-dom";
 import { getSemesterSubjects } from "../../../controller/utils/subjectUtils";
-import folder from "../../../assets/images/folder--purple.png";
+import folder from "../../assets/images/folder--purple.png";
 
 function ClassesPage() {
   const [semester, setSemester] = useState<number>();
