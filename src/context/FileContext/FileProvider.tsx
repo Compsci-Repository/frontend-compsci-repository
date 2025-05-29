@@ -1,9 +1,9 @@
 import { type PropsWithChildren, useMemo } from "react";
 import { FileContext } from "./FileContext";
-import { MockFileAPI } from "../../controller/mockApi";
+import { FileAPI } from "../../controller/api";
 
 function FileProvider({ children }: PropsWithChildren) {
-  const api = useMemo(() => new MockFileAPI(), []);
+  const api = useMemo(() => new FileAPI(), []);
 
   return (
     <FileContext.Provider value={{ getFiles: api.getFiles }}>
